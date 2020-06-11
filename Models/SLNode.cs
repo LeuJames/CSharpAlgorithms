@@ -9,14 +9,14 @@ namespace algorithms.Models
 
     public SLL Child;
 
-    public bool End;
+    public bool Flag;
 
     public SLNode(int val)
     {
       Value = val;
       Next = null;
       Child = null;
-      End = false;
+      Flag = false;
     }
 
   }

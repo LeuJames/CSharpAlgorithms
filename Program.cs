@@ -165,31 +165,61 @@ namespace algorithms
             // GetDistance(customers, test);
             // OptimalXY(customers);
 
-          // Linked Lists:
-            Console.WriteLine("Linked Lists!");
-            SLL List1 = new SLL();
-            Console.Write("List1 Creation: ");
-            List1.Append(5).Append(3).Append(9).Display();
+          // Singly Linked Lists:
+            // Console.WriteLine("Singly Linked Lists!");
+            // SLL List1 = new SLL();
+            // Console.Write("List1 Creation: ");
+            // List1.Append(5).Append(3).Append(9).Append(6).Display();
+
+          // Reverse SLL:
             // List.Reverse().Display();
 
-            Console.Write("List2 Creation: ");
-            SLL List2 = new SLL();
-            List2.Append(4).Append(7).Append(2).Display();
+          // Flatten Children:
+            // Console.Write("List2 Creation: ");
+            // SLL List2 = new SLL();
+            // List2.Append(4).Append(7).Append(2).Display();
 
-            List1.Head.Next.Child = List2;
+            // List1.Head.Next.Child = List2;
 
-            Console.Write("List1 Flatten Children: ");
-            List1.FlattenChildren().Display();
+            // Console.Write("List1 Flatten Children: ");
+            // List1.FlattenChildren().Display();
             
-            Console.Write("List2: ");
-            List2.Display();
+            // Console.Write("List2: ");
+            // List2.Display();
 
-            Console.Write("List1 Unflatten Children: ");
-            List1.UnflattenChildren().Display();
-            Console.Write("List 2: ");
-            List2.Display();
+          // Unflatten Children:
+            // Console.Write("List1 Unflatten Children: ");
+            // List1.UnflattenChildren().Display();
+            // Console.Write("List 2: ");
+            // List2.Display();
 
+          // Looped Lists:
+            // Console.Write("LoopList Creation... ");
+            // // List1.MakeLoop(3).HasLoop();
+            // List1.MakeLoop(3).BreakLoop().Display();
+            
+          // Doubly Linked Lists:
+            DLL DList1 = new DLL();
+            Console.WriteLine("List Creation: ");
+            DList1.AddToBack(5).AddToFront(7).AddToFront(4).AddToBack(6).Display();
 
+            DList1.Size();
+
+            Console.Write("Searching... ");
+            DList1.Contains(4);
+
+            Console.Write("Searching... ");
+            DList1.Contains(9);
+
+            Console.Write("Remove From Front: ");
+            Console.WriteLine(DList1.RemoveFromFront());
+            Console.Write("List is now: ");
+            DList1.Display();
+
+            Console.Write("Remove From Back: ");
+            DList1.RemoveFromBack();
+            Console.Write("List is now: ");
+            DList1.Display();
 
         }
     }
