@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace algorithms.Models
 {
@@ -131,5 +132,44 @@ namespace algorithms.Models
           Console.WriteLine($"List contains {count} nodes.");
           return count;
         }
-  }
+
+    // DList: Reverse
+    // Create function to reverse nodes in a DList.
+
+        public DLL Reverse()
+        {
+          DLNode Runner = Head;
+          while (Runner != null )
+          {
+            DLNode Temp = Runner.Next;
+            Runner.Next = Runner.Previous;
+            Runner.Previous = Temp;
+            Runner = Temp;
+          }
+          DLNode Temp2 = Head;
+          Head = Tail;
+          Tail = Temp2;
+          return this;
+        }
+
+      public DLL Reverse2()
+      {
+        List<int> Values = new List<int>();
+        DLNode Runner = Head;
+        while(Runner != null)
+        {
+          Values.Add(Runner.Value);
+          Runner = Runner.Next;
+        }
+        Runner = Tail;
+        foreach (int Value in Values)
+        {
+          Runner.Value = Value;
+          Runner = Runner.Previous;
+        }
+        return this;
+      }
+
+    }
+  
 }

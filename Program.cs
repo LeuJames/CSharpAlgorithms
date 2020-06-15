@@ -199,27 +199,36 @@ namespace algorithms
             // List1.MakeLoop(3).BreakLoop().Display();
             
           // Doubly Linked Lists:
-            DLL DList1 = new DLL();
-            Console.WriteLine("List Creation: ");
-            DList1.AddToBack(5).AddToFront(7).AddToFront(4).AddToBack(6).Display();
+            // DLL DList1 = new DLL();
+            // Console.WriteLine("List Creation: ");
+            // DList1.AddToBack(5).AddToFront(7).AddToFront(4).AddToBack(6).Display();
 
-            DList1.Size();
+            // DList1.Size();
 
-            Console.Write("Searching... ");
-            DList1.Contains(4);
+            // Console.Write("Searching... ");
+            // DList1.Contains(4);
 
-            Console.Write("Searching... ");
-            DList1.Contains(9);
+            // Console.Write("Searching... ");
+            // DList1.Contains(9);
 
-            Console.Write("Remove From Front: ");
-            Console.WriteLine(DList1.RemoveFromFront());
-            Console.Write("List is now: ");
-            DList1.Display();
+            // Console.Write("Remove From Front: ");
+            // Console.WriteLine(DList1.RemoveFromFront());
+            // Console.Write("List is now: ");
+            // DList1.Display();
 
-            Console.Write("Remove From Back: ");
-            DList1.RemoveFromBack();
-            Console.Write("List is now: ");
-            DList1.Display();
+            // Console.Write("Remove From Back: ");
+            // DList1.RemoveFromBack();
+            // Console.Write("List is now: ");
+            // DList1.Display();
+
+            // DList1.Reverse().Display();
+
+          // Binary Search Tree
+            BST Tree1 = new BST();
+            Tree1.Add(10).Add(5).Add(8).Add(15).Add(23).Add(8).Display();
+            
+            
+
 
         }
     }
