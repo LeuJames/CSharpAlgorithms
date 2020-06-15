@@ -30,6 +30,64 @@ namespace algorithms.Models
         {
             Root = null;
         }
+
+      public BST Add(int val)
+      {
+        BTNode NewNode = new BTNode(val);
+        if(Root == null)
+        {
+          Root = NewNode;
+          return this;
+        }
+        BTNode runner = Root;
+        while(runner != null)
+        {
+          if(val < runner.Value)
+          {
+            if(runner.Left != null)
+            {
+              runner = runner.Left;
+            }
+            else
+            {
+              runner.Left = NewNode;
+              return this;
+            }
+          }
+          else
+          {
+            if(runner.Right != null)
+              {
+                runner = runner.Right;
+              }
+              else
+              {
+                runner.Right = NewNode;
+                return this;
+              }
+          }
+        }
+        return this;
+      }
+
+      public void Display()
+      {
+        Display(Root);
+      }
+
+      public void Display(BTNode node)
+      {
+        if(node != null)
+        {
+          Console.Write($"{node.Value} ");
+          Display(node.Left);
+          Display(node.Right);
+        }
+        else
+        {
+          Console.Write("Null ");
+        }
+      }
     }
 
 }
