@@ -224,12 +224,36 @@ namespace algorithms
             // DList1.Reverse().Display();
 
           // Binary Search Tree
-            BST Tree1 = new BST();
-            Tree1.Add(10).Add(5).Add(8).Add(15).Add(23).Add(8).Display();
-            
-            
+            // BST Tree1 = new BST();
+            // Tree1.Add(10).Add(5).Add(8).Add(15).Add(23).Add(8).Add(9).Display();
+            // Console.WriteLine("");
+            // Console.Write("Min is: ");
+            // Tree1.Min();
+            // Console.Write("Size is: ");
+            // Console.WriteLine(Tree1.Size());
+            // Tree1.Contains(23);
+            // Tree1.Contains(7);
+            // Console.Write("Tree 1 height: ");
+            // Console.WriteLine(Tree1.Height());
+            // Console.Write("Is Tree 1 Balanced? ");
+            // Console.WriteLine(Tree1.IsBalanced());
 
+            // BST Tree2 = new BST();
+            // Tree2.Add(10).Add(5).Add(15).Add(17);
+            // Console.Write("Tree 2 height: ");
+            // Console.WriteLine(Tree2.Height());
+            // Console.Write("Is Tree 2 Balanced? ");
+            // Console.WriteLine(Tree2.IsBalanced());
 
+          // Tries
+            Trie trie1 = new Trie();
+            trie1.Insert("car");
+            trie1.Insert("cat");
+            trie1.Insert("cart");
+            trie1.Insert("dog");
+            trie1.Display();
+            Console.WriteLine();
+            trie1.DisplayWords();
         }
     }
 }
